@@ -1,0 +1,52 @@
+{% load static %}
+<!--loaded static files-->
+
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="img/fav.png">
+	<meta name="author" content="colorlib">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta charset="UTF-8">
+	<title>WebProgramming</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,500" rel="stylesheet">
+
+	<link rel="stylesheet" href="{% static 'mypf/css/linearicons.css' %}">
+	<link rel="stylesheet" href="{% static 'mypf/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'mypf/css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'mypf/css/owl.carousel.css' %}">
+	<link rel="stylesheet" href="{% static 'mypf/css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'mypf/css/nice-select.css' %}">
+	<link rel="stylesheet" href="{% static 'mypf/css/main.css' %}">
+</head>
+
+<body>
+    <!-- Adding navbar -->
+    {% include 'mypf/navbar.html' %}
+
+    {% block content %}
+
+    {% endblock %}
+    <!--Adding footer -->
+    {% include 'mypf/footer.html' %}
+    <!-- Adding custom js, bootsrap js, jquery and related script files-->
+
+    <script src="{% static 'mypf/js/vendor/jquery-2.2.4.min.js' %}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="{% static 'mypf/js/vendor/bootstrap.min.js' %}"></script>
+	<script src="{% static 'mypf/js/jquery.ajaxchimp.min.js' %}"></script>
+	<script src="{% static 'mypf/js/parallax.min.js' %}"></script>
+	<script src="{% static 'mypf/js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'mypf/js/isotope.pkgd.min.js' %}"></script>
+	<script src="{% static 'mypf/js/jquery.nice-select.min.js' %}"></script>
+	<script src="{% static 'mypf/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'mypf/js/jquery.sticky.js' %}"></script>
+	<script src="{% static 'mypf/js/main.js' %}"></script>
+	<script src="{% static 'mypf/js/script.js' %}"></script>
+</body>
+</html>
+

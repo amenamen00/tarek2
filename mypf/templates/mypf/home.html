@@ -1,0 +1,66 @@
+{% extends 'mypf/base.html' %}
+
+{% block content %}
+
+<section class="home-banner-area relative" id="home" data-parallax="scroll" data-image-src="static/mypf/img/header-bg.jpg">
+  <div class="overlay-bg overlay"></div>
+  <h1 class="template-name">WebProgramming</h1>
+  <div class="container">
+    <div class="row fullscreen">
+      <div class="banner-content col-lg-12">
+        <p>F.C.I | Luxor University</p>
+        <h1>
+          Web Programming <br>
+          Level 4
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="head-bottom-meta">
+    <div class="d-flex meta-left no-padding">
+      <a href="#"><span class="fa fa-facebook-f"></span></a>
+      <a href="#"><span class="fa fa-twitter"></span></a>
+      <a href="#"><span class="fa fa-instagram"></span></a>
+    </div>
+  </div>
+</section>
+<!-- End brands Area -->
+<section class="about-area section-gap">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+        <form method="post">
+         
+          <div class="row align-items-center">
+            <div class="col-lg-12 mb-4 mb-xl-0 col-xl-4">
+              {% csrf_token %}
+            <input type="text" name="name" class="form-control rounded"  id="name" placeholder="Jane Doe">
+            </div>
+           
+            <div class="col-lg-12 mb-4 mb-xl-0 col-xl-3">
+            <div class="select-wrap">
+              <span class="icon"><span class="icon-keyboard_arrow_down"></span></span>
+              <select class="form-control rounded" name="gender" id="gender">
+              <option selected>Select</option>
+              <option value="m">Male</option>
+              <option value="f">Female</option>
+              </select>
+            </div>
+            </div>
+            <div class="col-lg-12 col-xl-2 ml-auto text-right">
+              
+            <button type="button" class="btn btn-primary   ">Generate Your</button>
+            </div>
+            
+          </div>
+          </form>
+    
+    </div>
+  </div>
+</section>
+<div class="row justify-content-center margin">
+  <div class="col-8">
+    <img class="img-fluid" name="srcapi" id="srcapi" src="https://belikebill.ga/billgen-API.php?default=1&name=Jane Doe&sex=f">
+
+  </div>
+</div>
+{% endblock %}
